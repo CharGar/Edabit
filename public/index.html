@@ -8,10 +8,10 @@
     <title>CashMoneyRecords</title>
   </head>
 <body>
-<h1>edabit coding exercises</h1>
+<div class ='title'>edabit coding exercises</div>
 
 <div class="problem">
-  <h3>Return The Last Item In An Array </h3>
+  <h1>Return The Last Item In An Array </h1>
 <p>Create a function that accepts an array and returns the last item in the array. The array can contain any of JavaScript's five primitive data types.</p>
 Number,
 String,
@@ -38,7 +38,7 @@ return lastItem;<br>
 </div>
 
 <div class="problem">
-  <h3>  Is The Number Even Or Odd? </h3>
+  <h1>  Is The Number Even Or Odd? </h1>
 
 <p>Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
 Rules</p>
@@ -64,6 +64,37 @@ Negative whole numbers are fine. <br>
         return 'odd'; <br>
 }</p>
 </div>
+</div>
+<div class="problem">
+
+
+<h1>Eliminate All Odd Numbers Within An Array</h1>
+
+
+<p>Create a function that returns all values in an array that aren't' odd.
+Rules
+Return all valid numbers (even) in the order they were given.
+Examples
+</p>
+
+<div class="examples">
+  <h3>Examples</h3>
+
+[1, 2, 3, 4, 5, 6, 7, 8] ➞ [2, 4, 6, 8] <br>
+
+[43, 65, 23, 89, 53, 9, 6] ➞ [6] <br>
+
+[718, 991, 449, 644, 380, 440] ➞ [718, 644, 380, 440] <br>
+  </div>
+  <div class="solution">
+    <h4>Solution</h4>
+    <p>function noOdds(arr) { <br>
+return arr.filter(function (num) { <br>
+    return num % 2 === 0; <br>
+  }); <br>
+}
+</p>
+  </div>
 </div>
 
 </body>
